@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/WelcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dinner Dash"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.129"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <TextView
+        android:id="@+id/finalOutputToUsr"
+        android:layout_width="277dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="168dp"
+        android:gravity="center"
+        android:text="Please Select a Dish to Get Started!"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/burgerPic"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="burgerOrder"
+        app:layout_constraintBottom_toTopOf="@+id/pizzaPic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/burgers" />
+
+    <TextView
+        android:id="@+id/burgerDescription"
+        android:layout_width="250dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="burgerOrder"
+        android:text="@string/burgerInfo"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/pizzaDescription"
+        app:layout_constraintStart_toEndOf="@+id/burgerPic" />
+
+    <ImageView
+        android:id="@+id/pizzaPic"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="pizzaOrder"
+        app:layout_constraintBottom_toTopOf="@+id/lasangaPic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/pizza" />
+
+    <ImageView
+        android:id="@+id/lasangaPic"
+        android:layout_width="115dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="lasangaOrder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/lasangaremy" />
+
+    <TextView
+        android:id="@+id/lasangaDescription"
+        android:layout_width="250dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="lasangaOrder"
+        android:text="@string/lasangaInfo"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lasangaPic" />
+
+    <TextView
+        android:id="@+id/pizzaDescription"
+        android:layout_width="250dp"
+        android:layout_height="115dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="12dp"
+        android:onClick="pizzaOrder"
+        android:text="@string/pizzaInfo"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/lasangaDescription"
+        app:layout_constraintStart_toEndOf="@+id/pizzaPic" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        android:onClick="onFloatBtnClick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_shopping_cart_foreground" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

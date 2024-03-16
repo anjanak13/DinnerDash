@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FinalProject</string>
+
+    <string name="burgerInfo"><b>Twin Drifter</b>\n\nTwo Char-grilled beef patties with melted white cheddar. Comes topped with our signature sauces on a toasted bun.\n<b>$9.99/-</b></string>
+    <string name="pizzaInfo"><b>Pizza-Gedon</b>\n\nStuffed with mozzarella, this New York Style deep dish pizza is the perfect addition for any house party.\n\n<b>$13.99/-</b></string>
+    <string name="lasangaInfo"><b>Remy\'s Special</b>\n\nA modern twist on the world renowned Ratatouille. Layered with cheese and diced chicken.\n\n<b>$19.99/-</b></string>
+</resources>
